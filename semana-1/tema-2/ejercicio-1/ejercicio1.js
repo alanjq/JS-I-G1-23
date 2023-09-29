@@ -56,6 +56,9 @@ function validarNumeroMayoresA0() {
     console.log('suma', suma);
     console.log('total numeros', total_numeros);
 
+    // Imprimir el resultado en el documento
+    document.write('Números ingresados:', total_numeros, 'Media:', (suma / total_numeros))
+
     console.log('Números ingresados:', total_numeros, 'Media:', (suma / total_numeros));
     console.groupEnd()
 
