@@ -31,8 +31,7 @@ class PesoMexicano extends Moneda {
     }
 }
 
-
-
+// Creamos los objetos a partir de las clases
 const pesoMXN = new PesoMexicano()
 pesoMXN._codigo // ?
 pesoMXN.convertirAEuro(100) // ?
