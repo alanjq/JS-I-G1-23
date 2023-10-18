@@ -49,7 +49,7 @@ function agregar() {
     })
 
     // Sacar HTML de la tabla
-    let tbodyHTMl = document.querySelector('table-body')
+    let tbodyHTMl = document.querySelector('#table-body')
     let nuevoHtml = `${tbodyHTMl.innerHTML}<tr>
         <td>${descripcion.value}</td>
         <td>${calorias.value}</td>
