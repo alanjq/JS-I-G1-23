@@ -13,14 +13,16 @@
     <section class="cabecero">
         <div class="presupuesto">
             <div class="presupuesto_titulo">Presupuesto Disponible</div>
-            <div class="presupuesto_valor">2300.00 MXN</div>
-            <div class="presupuesto_ingreso limpiarEstilos">
+            <div class="presupuesto_valor" id="presupuesto">2300.00 MXN</div>
+            <div class="presupuesto_ingreso limpiarEstilos fila">
                 <div class="presupuesto_ingreso--texto">INGRESOS</div>
-                <div class="presupuest_ingreso--valor derecha">3600.00 MXN</div>
+                <div class="presupuesto_ingreso--valor derecha" id="ingresos">3600.00 MXN</div>
+                <div class="presupuesto_ingreso--porcentaje"></div>
             </div>
-            <div class="presupuesto_egreso limpiarEstilos">
+            <div class="presupuesto_egreso limpiarEstilos fila">
                 <div class="presupuesto_egreso--texto">EGRESOS</div>
-                <div class="presupuest_egreso--valor derecha">3600.00 MXN</div>
+                <div class="presupuesto_egreso--valor derecha" id="egresos">3600.00 MXN </div>
+                <div class="presupuesto_egreso--porcentaje" id="porcentaje">36.11 %</div>
             </div>
         </div>
     </section>
@@ -28,12 +30,12 @@
     <form id="forma">
         <section class="agregar">
             <div class="agregar_contenedor">
-                <select class="agregar_tipo" id="tipo">
+                <select class="agregar_tipo" id="tipo" name="tipo">
                     <option value="ingreso" selected>+</option>
                     <option value="egreso">-</option>
                 </select>
-                <input id="descripcion" class="agregar_descripcion" placeholder="Agregar descripción" />
-                <input step="any" type="number" class="agregar_valor" placeholder="Valor" />
+                <input name="descripcion" id="descripcion" class="agregar_descripcion" placeholder="Agregar descripción" />
+                <input name="valor" id="valor" step="any" type="number" class="agregar_valor" placeholder="Valor" />
                 <div class="agregar_btn">
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>

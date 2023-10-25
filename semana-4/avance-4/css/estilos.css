@@ -19,6 +19,11 @@ body {
     font-weight: 400;
 }
 
+.fila {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 5em;
+    align-items: center;
+}
 .derecha { float: right; }
 .rojo { color: #FF5049 !important; }
 .rojofocus:focus { border: 1px solid #FF5049 !important; }
@@ -93,8 +98,8 @@ body {
 .presupuesto_ingreso--porcentaje,
 .presupuesto_egreso--porcentaje {
     float: left;
-    width: 34px;
-    font-size: 11px;
+    width: auto;
+    font-size: 15px;
     padding: 3px 0;
     margin-left: 10px;
 }
